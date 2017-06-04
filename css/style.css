@@ -1,0 +1,301 @@
+﻿@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#musicBtn{
+	position:absolute;
+	top: 30px;
+	right: 60px;
+	width: 80px;
+	animation: rotate 2s infinite ;
+	
+}
+
+@keyframes rotate{
+	
+	from{}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+html,body{
+	width: 100%;
+}
+figure{
+	width: 33.3%;
+	height: 450px;
+	overflow: hidden;
+	background: black;
+	position: relative;
+	float: left;
+}
+figure:hover{
+	animation: back 4s infinite;
+}
+
+@keyframes back{
+	0%{}
+	20%{background: cornflowerblue;}
+	40%{background: darkblue;}
+	60%{background: darkgray;}
+	80%{background: yellow;}
+	100%{background: #333;}
+}
+
+figure img{
+	width: 500px;
+	/*透明度*/
+	opacity: 1;
+}
+figure:hover img{
+	opacity: 0.7;
+}
+
+figure,figure img, div,span,p,h2{
+	transition: all 2s;
+}
+
+.view1 img:hover{
+	transform: translateX(-50px);
+}
+
+.view1 h2{
+	position: absolute;
+	top: 60px;
+	left: 10px;
+	color: lightgrey;
+}
+.view1:hover h2{
+	transform: translateX(30px);
+	color: #333;
+}
+
+.view1 .info{
+	position: absolute;
+	left: 40px;
+	color: lightgray;
+	transition: all 0.8s;
+}
+.view1 .p1{
+	opacity: 0;
+	bottom: 0;
+	transform: translateY(300px);
+}
+.view1:hover .p1{
+	transform: translateY(-200px);
+	font-weight: 900;
+	opacity: 1;
+}
+
+.view1 .p2{
+	top: 200px;
+	transform: translateX(600px);
+}
+.view1:hover .p2{
+	transform: translateX(0px);
+}
+
+.view1 .p3{
+	top: 170px;
+	transform: translateX(-600px);
+}
+.view1:hover .p3{
+	transform: translateX(0px);
+}
+
+.view2:hover img{
+	transform: translateX(-30px) translateY(-30px);
+}
+
+.view2 h2{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	opacity: 0;
+}
+.view2:hover h2{
+	transform: translateX(20px);
+	opacity: 1;
+	color: lightgray;
+}
+.view2 .info{
+	position: absolute;
+	left: 20px;
+	transform: translateX(-500px);
+	color: lightgray;
+}
+.view2 .p1{
+	top: 100px;
+}
+.view2:hover .p1{
+	transform: translateX(0);
+}
+.view2 .p2{
+	top: 140px;
+}
+.view2:hover .p2{
+	transform: translateX(0);
+	transition-delay: 0.3s;
+}
+.view2 .p3{
+	top: 180px;
+}
+.view2:hover .p3{
+	transform: translateX(0);
+	transition-delay: 0.6s;
+}
+
+.view3:hover img{
+	transform: scale(1.2) translateX(-40px);
+	opacity: 0.4;
+}
+.view3 h2{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: lightgray;
+	opacity: 0;
+	transform: translateY(-100px);
+}
+.view3:hover h2{
+	transform: translateY(0);
+	opacity: 1;
+}
+.view3 .p1{
+	position: absolute;
+	top: 120px;
+	left: 20px;
+	transform: translateY(400px);
+	opacity: 0;
+	color: lightgray;
+	
+}
+.view3:hover .p1{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.view4:hover img{
+	animation: dong 5s infinite;
+}
+@keyframes dong{
+	0%{}
+	25%{transform: translateX(-30px) translateY(-20px);}
+	50%{transform: translateX(-30px) translateY(-80px) scale(1.2);}
+	75%{transform: translateX(-30px) translateY(-40px) scale(1.4);}
+	100%{}
+}
+.view4 h2{
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	transform: translateY(50px);
+	opacity: 0;
+}
+.view4:hover h2{
+	transform: translateY(0);
+	opacity: 1;
+	color: lightgray;
+}
+.view4 .box4{
+	width: 140%;
+	height: 300px;
+	background: cadetblue;
+	opacity: 0.7;
+	position: absolute;
+	left: 0;
+	bottom: -300px;
+}
+.view4:hover .box4{
+	transform: rotate(-20deg);
+	/*基点*/
+	transform-origin: 0% 0%;
+}
+.view4 .sp{
+	position: absolute;
+	right: 90px;
+	bottom: 80px;
+	color: white;
+	z-index: 99;
+	opacity: 0;
+}
+.view4 .sps{
+	right: 20px;
+}
+.view4:hover .sp{
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.view5 .top{
+	position: absolute;
+	top: 70px;
+	left: 105px;
+	width: 0;
+	height: 230px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	
+}
+
+.view5:hover .top{
+	width: 242px;
+}
+
+.view5 .left{
+	position: absolute;
+	top: 70px;
+	left: 105px;
+	width: 240px;
+	height: 0px;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	
+}
+.view5:hover .left{
+	height: 234px;
+}
+.view5 h2{
+	position: absolute;
+	top: 37%;
+	left: 43%;
+	color: white;
+	font-weight: 900;
+	font-size: 13px;
+	transform: rotate(0deg) translateY(500px) scale(1);
+	opacity: 0;
+}
+.view5:hover h2{
+	transform: rotate(360deg) translateY(0px) scale(2);
+	opacity: 1;
+}
+
+.view6 h2{
+	position: absolute;
+	left: 15%;
+	top: 20%;
+	transform: translateX(-50px);
+	color: white;
+	opacity: 0;
+}
+
+.view6:hover h2{
+	transform: translateX(0);
+	opacity: 1;
+}
+.view6 .box6{
+	width: 86%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 7%;
+	border: 3px solid white;
+	transform: rotate(0deg) translateY(-500px);
+}
+.view6:hover .box6{
+	transform: rotate(360deg) translateY(0);
+}
+

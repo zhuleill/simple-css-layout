@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+
+		<div class="content">
+
+			<img src="img/1.jpg" class="pic pic1" />
+			<img src="img/2.jpg" class="pic pic2" />
+			<img src="img/3.jpg" class="pic pic3" />
+
+			<img src="img/4.jpg" class="pic pic4" />
+			<img src="img/5.jpg" class="pic pic5" />
+			<img src="img/6.jpg" class="pic pic6" />
+
+			<img src="img/7.jpg" class="pic pic7" />
+			<img src="img/8.jpg" class="pic pic8" />
+			<img src="img/9.jpg" class="pic pic9" />
+
+		</div>
+
+		<style type="text/css">
+			body {
+				background: #333;
+			}
+			
+			.content {
+				width: 900px;
+				height: 450px;
+				margin: 100px auto;
+			}
+			
+			.pic{
+				width: 150px;
+				margin-left: 20px;
+				margin-top: 20px;
+				padding: 5px;
+				background: white;
+				border: 10px solid blanchedalmond;
+				/*rgba:三元素+透明*/
+				box-shadow: 10px 10px 10px rgba(200,115,0,0.5);
+				transition: all 1.5s; 
+				position: relative;
+				
+			}
+			.pic1{
+				transform: rotate(11deg);
+			}
+			.pic2{
+				transform: rotate(-5deg);
+			}
+			.pic3{
+				transform: rotate(8deg);
+			}
+			.pic4{
+				transform: rotate(-6deg);
+			}
+			.pic5{
+				transform: rotate(12deg);
+			}
+			.pic6{
+				transform: rotate(-10deg);
+			}
+			.pic7{
+				transform: rotate(-5deg);
+			}
+			.pic8{
+				transform: rotate(15deg);
+			}
+			.pic9{
+				transform: rotate(-18deg);
+			}
+
+			.pic:hover{
+				transform: scale(2);
+				/*层级：想要修改该元素的层级，该元素必须拥有定位属性*/
+				z-index: 99;
+			}
+		</style>
+	</body>
+
+</html>
